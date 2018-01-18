@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import './grid.css'
 
 /**
- * @description Grid Component.
+ * @description Row's Col Component.
  */
-class Grid extends Component {
+class Col extends Component {
     render() {
         return (
             <div>
@@ -14,4 +14,4 @@ class Grid extends Component {
     }
 }
 
-export default Grid;
+export default Col;
