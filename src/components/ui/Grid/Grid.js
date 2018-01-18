@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import './header.css'
+import './grid.css'
 
 /**
- * @description Header Component.
+ * @description Grid Component.
  */
-class Header extends Component {
+class Grid extends Component {
     render() {
         return (
             <div className="header">
@@ -14,4 +14,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Grid;

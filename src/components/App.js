@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 
-import { Header } from './ui'
+import { Container, Header } from './ui'
 
 class App extends Component {
     render() {
         return (
-            <div>
+            <Container>
                 <Header>
-                    <h1>yo</h1>
+                    yo
                 </Header>
-            </div>
+            </Container>
         );
     }
 }
