@@ -1,0 +1,23 @@
+.font-colour-primary {
+    color: #333333;
+}
+
+.font-colour-secondary {
+    color: #757575;
+}
+
+@font-face {
+    font-family: FrutigerLTforBNS-Bold;
+}
+
+@font-face {
+    font-family: FrutigerLTforBNS-Light;
+}
+
+@font-face {
+    font-family: FrutigerLTforBNS-Medium;
+}
+
+@font-face {
+    font-family: FrutigerLTforBNS-Roman;
+}
