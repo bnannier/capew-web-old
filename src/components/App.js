@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Container, Grid, Header } from './ui'
+import { Col, Container, Grid, Header, Row } from './ui'
 
 class App extends Component {
     render() {
@@ -8,7 +8,11 @@ class App extends Component {
             <Container>
                 <Header>
                     <Grid>
-
+                        <Row>
+                            <Col>1</Col>
+                            <Col>2</Col>
+                            <Col>3</Col>
+                        </Row>
                     </Grid>
                 </Header>
             </Container>

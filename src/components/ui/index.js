@@ -1,4 +1,6 @@
 export { default as Container } from './Container/Container'
 export { default as Grid } from './Grid/Grid'
+export { default as Row } from './Grid/Row'
+export { default as Col } from './Grid/Col'
 export { default as Header } from './Header/Header'
 export { default as Typography } from './Typography/Typography'
