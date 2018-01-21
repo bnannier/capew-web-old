@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import './header.css'
+import './row.css'
 
 /**
- * @description Header Component.
+ * @description Col's Row Component.
  */
-class Header extends Component {
+class Row extends Component {
     render() {
         return (
-            <div className="header">
+            <div className="row">
                 {this.props.children}
             </div>
         );
     }
 }
 
-export default Header;
+export default Row;

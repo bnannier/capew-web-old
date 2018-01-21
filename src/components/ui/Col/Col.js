@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './grid.css'
+import './col.css'
 
 /**
  * @description Row's Col Component.
@@ -7,7 +7,7 @@ import './grid.css'
 class Col extends Component {
     render() {
         return (
-            <div>
+            <div className={this.props.col + " " + this.props.colsm}>
                 {this.props.children}
             </div>
         );

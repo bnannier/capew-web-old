@@ -11,6 +11,8 @@ import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-r
 import registerServiceWorker from './components/utilities/registerServiceWorker'
 import App from './components/App'
 import rootReducer from './Reducers'
+import { Container } from './components/ui'
+import { Header } from './components/Header'
 
 /**
  * @description Create a history of your choosing (we're using a browser history in this case)
@@ -44,9 +46,10 @@ const store = createStore(
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            <div>
+            <Container>
+                <Header />
                 <Route exact path='/' component={App} />
-            </div>
+            </Container>
         </ConnectedRouter>
     </Provider>,
     document.getElementById('root')

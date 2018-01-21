@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Common from '../Common/Common'
 import './container.css'
 
 /**
@@ -7,9 +8,9 @@ import './container.css'
 class Container extends Component {
     render() {
         return (
-            <div className="container">
+            <Common className="container">
                 {this.props.children}
-            </div>
+            </Common>
         );
     }
 }
