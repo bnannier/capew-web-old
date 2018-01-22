@@ -1,0 +1,10 @@
+a {
+  color: #6419e9;
+  line-height: 1.2rem;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #490d91;
+  text-decoration: underline;
+}

@@ -8,8 +8,6 @@ class AppBar extends Component {
                 <div className={"app-bar " + this.props.className}>
                     {this.props.children}
                 </div>
-                <div className="app-bar-spacer">
-                </div>
             </div>
         );
     }

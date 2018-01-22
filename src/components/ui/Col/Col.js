@@ -7,7 +7,7 @@ import './col.css'
 class Col extends Component {
     render() {
         return (
-            <div className={this.props.col + " " + this.props.colsm}>
+            <div className={this.props.col + " " + this.props.colsm + " " + this.props.align}>
                 {this.props.children}
             </div>
         );

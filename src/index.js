@@ -49,6 +49,7 @@ ReactDOM.render(
             <Container>
                 <Header />
                 <Route exact path='/' component={App} />
+                <Route path='/aaa' component={App} />
             </Container>
         </ConnectedRouter>
     </Provider>,
