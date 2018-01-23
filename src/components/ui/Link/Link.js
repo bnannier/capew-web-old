@@ -15,31 +15,29 @@ import { Icon } from '../'
  */
 class Link extends Component {
     render() {
+        let propsClass = (this.props.css ? this.props.css : " ");
+
         if (this.props.external) {
-            return (this.externalLink())
+            return (this.externalLink(propsClass))
         } else {
-            return (this.internalRoute())
+            return (this.internalRoute(propsClass))
         }
     }
 
-    internalRoute() {
+    internalRoute(propsClass) {
         return (
             <ReactRouterLink id={this.props.id}
-                             className={
-                                 "app-bar" + " " +
-                                 (this.props.css ? this.props.css : " ")}
+                             className={propsClass}
                              to={this.props.to}>
                 {this.props.children}
             </ReactRouterLink>
         );
     }
 
-    externalLink() {
+    externalLink(propsClass) {
         return (
             <a id={this.props.id + "_link"}
-               className={
-                   "link" + " " +
-                   (this.props.css ? this.props.css : " ")}
+               className={propsClass}
                href={this.props.to}
                target={this.targetCheck()}>
                 {this.props.children} <Icon icon="fa fa-external-link external-link"></Icon>

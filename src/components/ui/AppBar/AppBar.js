@@ -10,12 +10,11 @@ import './appBar.css'
  * @param {node} children -
  */
 class AppBar extends Component {
-    let myClass = "app-bar" + " " + (this.props.css ? this.props.css : " ")
-
     render() {
+        let propsClass = "app-bar " + (this.props.css ? this.props.css : " ");
+
         return (
-            <div id={this.props.id}
-                 className={myClass}>
+            <div id={this.props.id} className={propsClass}>
                 {this.props.children}
             </div>
         );

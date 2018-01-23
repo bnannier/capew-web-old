@@ -11,11 +11,11 @@ import './row.css'
  */
 class Row extends Component {
     render() {
+        let propsClass = "row " + (this.props.css ? this.props.css : " ");
+
         return (
             <div id={this.props.id}
-                 className={
-                     "row" + " " +
-                     (this.props.css ? this.props.css : " ")}>
+                 className={propsClass}>
                  {this.props.children}
             </div>
         );

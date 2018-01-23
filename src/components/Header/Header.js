@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { AppBar, Button, Col, Image, Link, Row } from '../ui'
+import { AppBar, Col, Image, Link, Row } from '../ui'
 import './header.css'
 import capewLogo from '../assets/capew.svg'
 
@@ -7,19 +7,17 @@ import capewLogo from '../assets/capew.svg'
  * @description Header Component.
  */
 class Header extends Component {
-
-
     render() {
         return (
-            <AppBar id="header">
-                <Row className="header-row">
+            <AppBar>
+                <Row css="header-row">
                     <Col col="col-2" colsm="col-12-sm" align="left">
-                        <Link to="/page/app-bar" className="gs-button">
-                            <Image alt="Capew" src={capewLogo} className="header-logo"/>
+                        <Link to="/">
+                            <Image alt="Capew" src={capewLogo} css="header-logo"/>
                         </Link>
                     </Col>
                     <Col col="col-10" colsm="hidden-sm" align="right">
-                        <Link to="/page/app-bar" className="header-link">Login</Link>
+                        <Link to="/login" css="header-link">Login</Link>
                     </Col>
 
                 </Row>

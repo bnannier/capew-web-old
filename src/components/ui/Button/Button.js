@@ -17,13 +17,11 @@ import './button.css'
  */
 class Button extends Component {
     render() {
+        let propsClass = this.buttonType() + " " + this.secondaryButtonType() + " " + (this.props.css ? this.props.css : " ");
+
         return (
             <button id={this.props.id}
-                    className={
-                        "button" + " " +
-                        this.buttonType() + " " +
-                        this.secondaryButtonType() + " " +
-                        (this.props.css ? this.props.css : " ")}
+                    className={propsClass}
                     onClick={this.props.onClick}>
                 {this.props.children}
             </button>

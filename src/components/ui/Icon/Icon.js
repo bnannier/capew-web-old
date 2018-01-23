@@ -13,13 +13,11 @@ import './icon.css'
  */
 class Icon extends Component {
     render() {
+        let propsClass = ("fa-" + this.props.icon) + " fa " + (this.props.css ? this.props.css : " ");
+
         return (
             <i id={this.props.id}
-               className={
-                   "icon" + " " +
-                   ("fa-" + this.props.icon) +
-                   " fa" + " " +
-                   (this.props.css ? this.props.css : " ")}
+               className={propsClass}
                aria-hidden="true">
                 {this.props.children}
             </i>

@@ -14,14 +14,11 @@ import './col.css'
  */
 class Col extends Component {
     render() {
+        let propsClass = this.props.col + " " + this.props.colsm + " " + this.props.align + " " + (this.props.css ? this.props.css : " ");
+
         return (
             <div id={this.props.id}
-                 className={
-                     "col" + " " +
-                     this.props.col + " " +
-                     this.props.colsm + " " +
-                     this.props.align + " " +
-                     (this.props.css ? this.props.css : " ")}>
+                 className={propsClass}>
                 {this.props.children}
             </div>
         );

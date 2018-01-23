@@ -13,11 +13,11 @@ import './typography.css'
  */
 class Common extends Component {
     render() {
+        let propsClass = (this.props.css ? this.props.css : " ");
+
         return (
             <div id={this.props.id}
-                 className={
-                     "common" + " " +
-                     (this.props.css ? this.props.css : " ")}>
+                 className={propsClass}>
                 {this.props.children}
             </div>
         );

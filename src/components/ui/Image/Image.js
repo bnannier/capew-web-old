@@ -13,11 +13,11 @@ import './image.css'
  */
 class Image extends Component {
     render() {
+        let propsClass = "image " + (this.props.css ? this.props.css : " ");
+
         return (
             <img id={this.props.id}
-                 className={
-                     "image" + " " +
-                     (this.props.css ? this.props.css : " ")}
+                 className={propsClass}
                  src={this.props.src}
                  alt={this.props.alt}/>
         );
