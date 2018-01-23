@@ -1,17 +1,17 @@
 /* Default Button Style */
-button {
+.button {
   margin: 0;
   padding: 0;
 }
 
-button:focus {
+.button:focus {
   background: #490D91;
   color: #fff;
   border: 0;
   outline: none;
 }
 
-button:disabled {
+.button:disabled {
   background: #fafafa;
   color: #757575;
   outline: none;

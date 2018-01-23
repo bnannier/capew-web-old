@@ -1,17 +1,31 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import './row.css'
 
 /**
- * @description Col's Row Component.
+ * @description
+ * @param {string} id -
+ * @param {string} css -
+ * @param {node} children -
  */
 class Row extends Component {
     render() {
         return (
-            <div className={"row " + this.props.className}>
-                {this.props.children}
+            <div id={this.props.id}
+                 className={
+                     "row" + " " +
+                     (this.props.css ? this.props.css : " ")}>
+                 {this.props.children}
             </div>
         );
     }
+}
+
+Image.propTypes = {
+    id: PropTypes.string,
+    css: PropTypes.string,
+    children: PropTypes.node
 }
 
 export default Row;

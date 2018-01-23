@@ -1,8 +1,20 @@
-.header-logo {
-    height: 26px;
-    margin: 10px 20px;
+#header {
 }
 
-.header-row {
+#header#logo {
+    height: 26px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
 
+.header-margin-left {
+    margin-left: 20px;
+}
+
+.header-margin-right {
+    margin-right: 20px;
+}
+
+.header-link {
+    line-height: 50px;
 }
