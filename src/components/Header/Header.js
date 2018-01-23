@@ -10,16 +10,15 @@ class Header extends Component {
     render() {
         return (
             <AppBar>
-                <Row css="header-row">
+                <Row>
                     <Col col="col-2" colsm="col-12-sm" align="left">
                         <Link to="/">
                             <Image alt="Capew" src={capewLogo} css="header-logo"/>
                         </Link>
                     </Col>
                     <Col col="col-10" colsm="hidden-sm" align="right">
-                        <Link to="/login" css="header-link">Login</Link>
+                        <Link to="/login" css="header-link">Log In</Link>
                     </Col>
-
                 </Row>
             </AppBar>
         );
