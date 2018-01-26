@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { AppBar, Col, Image, Link, Row } from '../ui'
+import { AppBar, AppBarLeft, AppBarCenter, AppBarRight } from '../ui'
 
 import capewLogo from '../assets/capew.svg'
 
@@ -10,7 +10,15 @@ class Header extends Component {
     render() {
         return (
             <AppBar>
-
+                <AppBarLeft>
+                    AppBarLeft
+                </AppBarLeft>
+                <AppBarCenter>
+                    AppBarCenter
+                </AppBarCenter>
+                <AppBarRight>
+                    AppBarRight
+                </AppBarRight>
             </AppBar>
         );
     }
