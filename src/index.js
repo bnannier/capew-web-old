@@ -13,6 +13,7 @@ import App from './components/App'
 import rootReducer from './Reducers'
 import { Container } from './components/ui'
 import { Header } from './components/Header'
+import Login from "./components/Login/Login";
 
 /**
  * @description Create a history of your choosing (we're using a browser history in this case)
@@ -49,7 +50,7 @@ ReactDOM.render(
             <Container>
                 <Header />
                 <Route exact path='/' component={App} />
-                <Route path='/aaa' component={App} />
+                {/*<Route path='/login' component={Login} />*/}
             </Container>
         </ConnectedRouter>
     </Provider>,

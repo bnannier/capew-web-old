@@ -3,25 +3,28 @@
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
     font-size: 90%;
 }
 
-/* ROOT FONT STYLES */
+#root{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ROOT FONT STYLES */
 * {
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
     color: #333447;
-}
-
-#root{
-    height:100%;
 }
 
 a {

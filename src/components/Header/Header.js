@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { AppBar, Col, Image, Link, Row } from '../ui'
-import './header.css'
+
 import capewLogo from '../assets/capew.svg'
 
 /**
@@ -10,16 +10,7 @@ class Header extends Component {
     render() {
         return (
             <AppBar>
-                <Row>
-                    <Col col="col-2" colsm="col-12-sm" align="left">
-                        <Link to="/">
-                            <Image alt="Capew" src={capewLogo} css="header-logo"/>
-                        </Link>
-                    </Col>
-                    <Col col="col-10" colsm="hidden-sm" align="right">
-                        <Link to="/login" css="header-link">Log In</Link>
-                    </Col>
-                </Row>
+
             </AppBar>
         );
     }

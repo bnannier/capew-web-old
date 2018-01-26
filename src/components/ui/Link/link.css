@@ -6,5 +6,5 @@ a {
 
 a:focus {
   color: #490d91;
-  text-decoration: underline;
+  text-decoration: none;
 }
