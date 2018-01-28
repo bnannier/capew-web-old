@@ -1,36 +1,14 @@
 @media screen and (min-width: 0px) {
     .app-bar {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-column: 1 / 13;
+        border-top: 2px solid #ed0722;
     }
 
     .app-bar-left {
-        display: flex;
-        grid-column: 1 / 6;
-        justify-content: flex-start;
-        align-items: center;
         padding-left: 2vh;
-
-        background-color: pink;
-    }
-    .app-bar-center {
-        display: flex;
-        grid-column: 6 / 7;
-        justify-content: center;
-        align-items: center;
-
-        background-color: blue;
     }
 
     .app-bar-right {
-        display: flex;
-        grid-column: 7 / 13;
-        justify-content: flex-end;
-        align-items: center;
         padding-right: 2vh;
-
-        background-color: white;
     }
 }
 
@@ -38,6 +16,7 @@
     .app-bar-left {
         grid-column: 1 / 4;
     }
+
     .app-bar-center {
         grid-column: 4 / 5;
     }
@@ -51,6 +30,7 @@
     .app-bar-left {
         grid-column: 1 / 3;
     }
+
     .app-bar-center {
         grid-column: 3 / 5;
     }

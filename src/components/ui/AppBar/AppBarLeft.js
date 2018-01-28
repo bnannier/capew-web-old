@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import './appBar.css'
+import Flex from '../Flex/Flex'
 
 /**
  * @description
@@ -14,9 +15,9 @@ class AppBarLeft extends Component {
         let propsClass = "app-bar-left " + (this.props.css ? this.props.css : " ");
 
         return (
-            <div id={this.props.id} className={propsClass}>
+            <Flex id={this.props.id} css={propsClass} rowStart={1} rowEnd={1} colStart={1} colEnd={4} justify="left" align="center">
                 {this.props.children}
-            </div>
+            </Flex>
         );
     }
 }

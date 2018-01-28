@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { Card } from '../ui'
 
 import './login.css'
 
@@ -11,13 +12,10 @@ import './login.css'
  */
 class Login extends Component {
     render() {
-        let propsClass = "login " + (this.props.css ? this.props.css : " ");
-
         return (
-            <div id={this.props.id} className={propsClass}>
-                <br /><br /><br />
+            <Card id={this.props.id} css="login">
                 login
-            </div>
+            </Card>
         );
     }
 }

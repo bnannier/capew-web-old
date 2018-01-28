@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './common.css'
-import './typography.css'
+import './card.css'
 
 /**
  * @description
@@ -10,9 +9,9 @@ import './typography.css'
  * @param {string} css -
  * @param {node} children -
  */
-class Common extends Component {
+class Card extends Component {
     render() {
-        let propsClass = (this.props.css ? this.props.css : " ");
+        let propsClass = "card " + (this.props.css ? this.props.css : " ");
 
         return (
             <div id={this.props.id} className={propsClass}>
@@ -22,10 +21,10 @@ class Common extends Component {
     }
 }
 
-Common.propTypes = {
+Card.propTypes = {
     id: PropTypes.string,
     css: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node,
 }
 
-export default Common;
+export default Card;

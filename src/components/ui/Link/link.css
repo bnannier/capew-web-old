@@ -1,10 +1,21 @@
-a {
-  color: #6419e9;
-  line-height: 1.2rem;
-  text-decoration: none;
+@media screen and (min-width: 0px) {
+  a {
+    color: #6419e9;
+    line-height: 1.2rem;
+    text-decoration: none;
+  }
+
+  a:focus {
+    color: #490d91;
+    text-decoration: none;
+  }
+
 }
 
-a:focus {
-  color: #490d91;
-  text-decoration: none;
+@media screen and (min-width: 640px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }

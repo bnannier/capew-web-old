@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import './appBar.css'
+import Grid from '../Grid/Grid'
 
 /**
  * @description
@@ -14,9 +15,9 @@ class AppBar extends Component {
         let propsClass = "app-bar " + (this.props.css ? this.props.css : " ");
 
         return (
-            <div id={this.props.id} className={propsClass}>
+            <Grid id={this.props.id} css={propsClass} rows={1} rowStart={1} rowEnd={1} columns={12} colStart={1} colEnd={12}>
                 {this.props.children}
-            </div>
+            </Grid>
         );
     }
 }

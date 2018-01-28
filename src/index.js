@@ -50,7 +50,7 @@ ReactDOM.render(
             <Container>
                 <Header />
                 <Route exact path='/' component={App} />
-                {/*<Route path='/login' component={Login} />*/}
+                <Route path='/login' component={Login} />
             </Container>
         </ConnectedRouter>
     </Provider>,
