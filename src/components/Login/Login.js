@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Card } from '../ui'
+import { Card, Flex, Password } from '../ui'
 
 import './login.css'
 
@@ -13,9 +13,12 @@ import './login.css'
 class Login extends Component {
     render() {
         return (
-            <Card id={this.props.id} css="login">
-                login
-            </Card>
+            <Flex rowStart={2} rowEnd={7} colStart={1} colEnd={12} justify="center" align="center">
+                <Card id={this.props.id} css="login">
+                    <Password />dddddddddddddddddddddd<br />
+
+                </Card>
+            </Flex>
         );
     }
 }

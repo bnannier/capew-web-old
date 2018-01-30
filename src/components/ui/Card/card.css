@@ -1,7 +1,12 @@
 @media screen and (min-width: 0px) {
   .card {
-    margin: 0;
-    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    transition: 0.2s;
+    padding: 20px;
+  }
+
+  .card:hover {
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.16);
   }
 }
 
