@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { AppBar, AppBarLeft, AppBarCenter, AppBarRight, Image, Link } from '../ui'
 
 import './header.css'
-import capewLogo from '../assets/capew.svg'
+import capewLogo from '../assets/img/capew.svg'
 
 /**
  * @description Header Component.
