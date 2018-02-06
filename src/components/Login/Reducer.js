@@ -1,28 +1,26 @@
+import { combineReducers } from 'redux';
 import {
-    LOGIN
-} from './Actions'
+    FACEBOOK_LOGIN,
+    SITE_LOGIN
+} from './Actions';
 
-export default function loginReducer (state = initialCalendarState, action) {
-    const {day, recipe, meal} = action
+const initialState = {
+    name: ""
+}
 
+function facebookLogin(state = initialState, action) {
     switch (action.type) {
-        case ADD_RECIPE :
+        case FACEBOOK_LOGIN:
             return {
-                ...state,
-                [day]: {
-                    ...state[day],
-                    [meal]: recipe.label,
-                }
+                name: action.login.name
             }
-        case REMOVE_FROM_CALENDAR :
-            return {
-                ...state,
-                [day]: {
-                    ...state[day],
-                    [meal]: null,
-                }
-            }
-        default :
-            return state
+        default:
+            return state;
     }
 }
+
+const reducers = combineReducers({
+    facebookLogin
+});
+
+export default reducers;

@@ -1,8 +1,11 @@
-export const LOGIN = 'LOGIN'
+import fetch from 'cross-fetch'
 
-export function removeFromCalendar ({ user }) {
+export const FACEBOOK_LOGIN = 'FACEBOOK_LOGIN'
+export const SITE_LOGIN = 'SITE_LOGIN'
+
+export function facebookLogin(login) {
     return {
-        type: LOGIN,
-        user
-    }
+        type: FACEBOOK_LOGIN,
+        login
+    };
 }
