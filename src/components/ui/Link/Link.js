@@ -15,29 +15,29 @@ import { Icon } from '../'
  */
 class Link extends Component {
     render() {
-        let propsClass = (this.props.css ? this.props.css : " ");
+        let combinedStyle = (this.props.css ? this.props.css : " ");
 
         if (this.props.external) {
-            return (this.externalLink(propsClass))
+            return (this.externalLink(combinedStyle))
         } else {
-            return (this.internalRoute(propsClass))
+            return (this.internalRoute(combinedStyle))
         }
     }
 
-    internalRoute(propsClass) {
+    internalRoute(combinedStyle) {
         return (
             <ReactRouterLink id={this.props.id}
-                             className={propsClass}
+                             className={combinedStyle}
                              to={this.props.to}>
                 {this.props.children}
             </ReactRouterLink>
         );
     }
 
-    externalLink(propsClass) {
+    externalLink(combinedStyle) {
         return (
             <a id={this.props.id + "_link"}
-               className={propsClass}
+               className={combinedStyle}
                href={this.props.to}
                target={this.targetCheck()}>
                 {this.props.children} <Icon icon="fa fa-external-link external-link"></Icon>

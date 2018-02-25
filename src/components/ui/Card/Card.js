@@ -11,10 +11,10 @@ import './card.css'
  */
 class Card extends Component {
     render() {
-        let propsClass = "card " + (this.props.css ? this.props.css : " ");
+        let combinedStyle = "card " + (this.props.css ? this.props.css : " ");
 
         return (
-            <div id={this.props.id} className={propsClass}>
+            <div id={this.props.id} className={combinedStyle}>
                 {this.props.children}
             </div>
         );

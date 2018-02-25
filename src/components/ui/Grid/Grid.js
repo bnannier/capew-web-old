@@ -11,10 +11,10 @@ import './grid.css'
  */
 class Grid extends Component {
     render() {
-        let propsClass = "grid " + (this.props.css ? this.props.css : "");
+        let combinedStyle = "grid " + (this.props.css ? this.props.css : "");
 
         return (
-            <div id={this.props.id} className={propsClass} style={this.renderStyles()}>
+            <div id={this.props.id} className={combinedStyle} style={this.renderStyles()}>
                 {this.props.children}
             </div>
         );

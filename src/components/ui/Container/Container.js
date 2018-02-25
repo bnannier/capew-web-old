@@ -12,10 +12,10 @@ import Common from '../Common/Common'
  */
 class Container extends Component {
     render() {
-        let propsClass = "container " + (this.props.css ? this.props.css : "");
+        let combinedStyle = "container " + (this.props.css ? this.props.css : "");
 
         return (
-            <Common id={this.props.id} css={propsClass}>
+            <Common id={this.props.id} css={combinedStyle}>
                 {this.props.children}
             </Common>
         );

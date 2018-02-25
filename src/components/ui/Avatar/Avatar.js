@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './button.css'
+import './avatar.css'
 
 /**
  * @description
@@ -15,7 +15,7 @@ import './button.css'
  * @param {bool} error -
  * @param {bool} info -
  */
-class Button extends Component {
+class Avatar extends Component {
     render() {
         let combinedStyle = this.buttonType() + " " + this.secondaryButtonType() + " " + (this.props.css ? this.props.css : " ");
 
@@ -53,7 +53,7 @@ class Button extends Component {
     }
 }
 
-Button.propTypes = {
+Avatar.propTypes = {
     id: PropTypes.string,
     css: PropTypes.string,
     children: PropTypes.node,
@@ -65,4 +65,4 @@ Button.propTypes = {
     info: PropTypes.bool
 }
 
-export default Button;
+export default Avatar;

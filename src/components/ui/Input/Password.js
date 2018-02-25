@@ -11,10 +11,10 @@ import './input.css'
  */
 class Password extends Component {
     render() {
-        let propsClass = "input " + (this.props.css ? this.props.css : " ");
+        let combinedStyle = "input " + (this.props.css ? this.props.css : " ");
 
         return (
-            <div>
+            <div className={combinedStyle}>
             </div>
         );
     }

@@ -11,7 +11,7 @@ import './flex.css'
  */
 class Flex extends Component {
     render() {
-        let propsClass = "flex " + (this.props.css ? this.props.css : "");
+        let combinedStyle = "flex " + (this.props.css ? this.props.css : "");
         let styles = {
             gridColumn: this.props.colStart + ' / ' + (this.props.colEnd + 1),
             gridRow: this.props.rowStart + ' / ' + (this.props.rowEnd + 1),
@@ -20,7 +20,7 @@ class Flex extends Component {
         };
 
         return (
-            <div id={this.props.id} className={propsClass} style={styles}>
+            <div id={this.props.id} className={combinedStyle} style={styles}>
                 {this.props.children}
             </div>
         );

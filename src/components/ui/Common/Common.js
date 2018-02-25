@@ -12,10 +12,10 @@ import './typography.css'
  */
 class Common extends Component {
     render() {
-        let propsClass = (this.props.css ? this.props.css : " ");
+        let combinedStyle = (this.props.css ? this.props.css : " ");
 
         return (
-            <div id={this.props.id} className={propsClass}>
+            <div id={this.props.id} className={combinedStyle}>
                 {this.props.children}
             </div>
         );

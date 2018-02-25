@@ -12,10 +12,10 @@ import Flex from '../Flex/Flex'
  */
 class AppBarLeft extends Component {
     render() {
-        let propsClass = "app-bar-left " + (this.props.css ? this.props.css : " ");
+        let combinedStyle = "app-bar-left " + (this.props.css ? this.props.css : " ");
 
         return (
-            <Flex id={this.props.id} css={propsClass} rowStart={1} rowEnd={1} colStart={1} colEnd={4} justify="left" align="center">
+            <Flex id={this.props.id} css={combinedStyle} rowStart={1} rowEnd={1} colStart={1} colEnd={4} justify="left" align="center">
                 {this.props.children}
             </Flex>
         );

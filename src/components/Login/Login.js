@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import FacebookLogin from 'react-facebook-login'
 
-import { Card, Flex, Password } from '../ui'
+import { Card, Flex } from '../ui'
 
 import './login.css'
 
@@ -24,10 +24,12 @@ class Login extends Component {
                 <Card id={this.props.id} css="login">
                     <FacebookLogin
                         appId="462130920868794"
+                        size="small"
                         autoLoad={true}
                         fields="name,email,picture"
                         // scope="public_profile,user_friends,user_actions.books"
                         callback={this.props.responseFacebook}
+                        cssClass="facebookLogin"
                     />
                     <div>{this.props.name}</div>
                 </Card>
@@ -40,19 +42,19 @@ Login.propTypes = {
     id: PropTypes.string,
     css: PropTypes.string,
     children: PropTypes.node
-}
+};
 
 const mapStateToProps = (state) => {
     return {
-        name: state.login.facebookLogin.name
+        name: state.login.name
     }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
         dispatch,
         responseFacebook: (response) => dispatch(facebookLogin(response))
     }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login)

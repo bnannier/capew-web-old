@@ -12,10 +12,10 @@ import Grid from '../Grid/Grid'
  */
 class AppBar extends Component {
     render() {
-        let propsClass = "app-bar " + (this.props.css ? this.props.css : " ");
+        let combinedStyle = "app-bar " + (this.props.css ? this.props.css : " ");
 
         return (
-            <Grid id={this.props.id} css={propsClass} rows={1} rowStart={1} rowEnd={1} columns={12} colStart={1} colEnd={12}>
+            <Grid id={this.props.id} css={combinedStyle} rows={1} rowStart={1} rowEnd={1} columns={12} colStart={1} colEnd={12}>
                 {this.props.children}
             </Grid>
         );
