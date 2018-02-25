@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { AppBar, AppBarLeft, AppBarCenter, AppBarRight, Image, Link } from '../ui'
+import {AppBar, AppBarLeft, AppBarCenter, AppBarRight, AppBarLogo, AppBarMenuItem, Avatar, Image, Link, AppBarMenu} from '../ui'
 
 import './header.css'
 import capewLogo from '../assets/img/capew.svg'
@@ -13,14 +13,16 @@ class Header extends Component {
         return (
             <AppBar>
                 <AppBarLeft>
-                    <Link to="/">
-                        <Image alt="Capew" src={capewLogo} css="header-logo"/>
-                    </Link>
+                    <AppBarLogo logo={capewLogo} />
                 </AppBarLeft>
                 <AppBarCenter>
                 </AppBarCenter>
                 <AppBarRight>
-                    {this.loginCheck()}
+                    <AppBarMenu>
+                        <AppBarMenuItem>
+                            <Avatar name={this.props.name} image={this.props.userImage} small circle />
+                        </AppBarMenuItem>
+                    </AppBarMenu>
                 </AppBarRight>
             </AppBar>
         );

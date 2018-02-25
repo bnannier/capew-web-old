@@ -2,53 +2,42 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import './avatar.css'
+import Image from "../Image/Image";
 
 /**
  * @description
  * @param {string} id -
  * @param {string} css -
  * @param {node} children -
- * @param {bool} primary -
- * @param {bool} secondary -
- * @param {bool} create -
- * @param {bool} success -
- * @param {bool} error -
- * @param {bool} info -
  */
 class Avatar extends Component {
     render() {
-        let combinedStyle = this.buttonType() + " " + this.secondaryButtonType() + " " + (this.props.css ? this.props.css : " ");
+        let combinedStyle = this.size() + " " + this.shape() + " " + (this.props.css ? this.props.css : " ");
 
         return (
-            <button id={this.props.id}
-                    className={combinedStyle}
-                    onClick={this.props.onClick}>
-                {this.props.children}
-            </button>
+            <Image alt={this.props.name} src={this.props.image} css={combinedStyle}/>
         );
     }
 
-    buttonType() {
-        if (this.props.primary) {
-            return (" primary-button ");
-        } else if (this.props.secondary) {
-            return (" secondary-button ");
-        } else if (this.props.image) {
-            return (" image-button ");
+    size() {
+        if (this.props.small) {
+            return (" avatar-small ");
+        } else if (this.props.medium) {
+            return (" avatar-medium ");
+        } else if (this.props.large) {
+            return (" avatar-large ");
         } else {
             return (" "); // Default Button
         }
     }
 
-    secondaryButtonType() {
-        if (this.props.create) {
-            return (" secondary-button-cerate ");
-        } else if (this.props.success) {
-            return (" secondary-button-success ");
-        } else if (this.props.error) {
-            return (" secondary-button-error ");
-        } else if (this.props.info) {
-            return (" secondary-button-info ");
+    shape() {
+        if (this.props.circle) {
+            return (" avatar-circle ");
+        } else if (this.props.square) {
+            return (" avatar-square ");
+        } else {
+            return (" "); // Default Button
         }
     }
 }
@@ -56,13 +45,11 @@ class Avatar extends Component {
 Avatar.propTypes = {
     id: PropTypes.string,
     css: PropTypes.string,
-    children: PropTypes.node,
-    primary: PropTypes.bool,
-    secondary: PropTypes.bool,
-    create: PropTypes.bool,
-    success: PropTypes.bool,
-    error: PropTypes.bool,
-    info: PropTypes.bool
+    name: PropTypes.string,
+    image: PropTypes.string,
+    small: PropTypes.string,
+    medium: PropTypes.string,
+    large: PropTypes.string
 }
 
 export default Avatar;

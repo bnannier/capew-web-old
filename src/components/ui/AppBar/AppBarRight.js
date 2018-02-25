@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './appBar.css'
 import Flex from '../Flex/Flex'
 
 /**
@@ -15,7 +14,7 @@ class AppBarRight extends Component {
         let combinedStyle = "app-bar-right " + (this.props.css ? this.props.css : " ");
 
         return (
-            <Flex id={this.props.id} css={combinedStyle} rowStart={1} rowEnd={1} colStart={9} colEnd={12} justify="right" align="center">
+            <Flex id={this.props.id} css={combinedStyle} rowStart={1} rowEnd={1} colStart={7} colEnd={12} justify="right" align="center">
                 {this.props.children}
             </Flex>
         );

@@ -10,6 +10,20 @@
     .app-bar-right {
         padding-right: 2vh;
     }
+
+    .app-bar-logo {
+        height: 28px;
+        margin: 8px 0px 0px 10px ;
+    }
+
+    .app-bar-menu {
+        text-align: right;
+        line-height: 48px;
+    }
+
+    .app-bar-menu-item {
+        background-color: #00ffff;
+    }
 }
 
 @media screen and (min-width: 640px) {

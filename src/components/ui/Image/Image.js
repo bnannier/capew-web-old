@@ -30,6 +30,6 @@ Image.propTypes = {
     children: PropTypes.node,
     src: PropTypes.string,
     alt: PropTypes.string
-}
+};
 
 export default Image;
