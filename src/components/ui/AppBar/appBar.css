@@ -19,12 +19,38 @@
     .app-bar-menu {
         width: 100%;
         text-align: right;
+        height: 48px;
+        line-height: 48px;
     }
 
     .app-bar-menu-item {
         float: right;
         height: 48px;
         vertical-align: middle;
+    }
+
+    .app-bar-menu-profile-image {
+        width: 34px;
+        height: 34px;
+        margin: 7px 0 7px 0;
+    }
+
+    .app-bar-menu-profile-image-circle {
+        border-radius: 50%;
+    }
+
+    .app-bar-menu-profile-image-square {
+        border-radius: 100%;
+    }
+
+    .app-bar-menu-profile-text-left {
+        margin-left: 5px;
+        float: right;
+    }
+
+    .app-bar-menu-profile-text-right {
+        margin-right: 5px;
+        float: left;
     }
 }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './avatar.css'
+import './appBar.css'
 import Image from "../Image/Image";
 
 /**
@@ -10,35 +10,23 @@ import Image from "../Image/Image";
  * @param {string} css -
  * @param {node} children -
  */
-class Avatar extends Component {
+class AppBarMenuProfile extends Component {
     render() {
-        let combinedStyle = this.size() + " " + this.shape() + " " + (this.props.css ? this.props.css : " ");
+        let combinedStyle = "app-bar-menu-profile-image " + this.shape() + " " + (this.props.css ? this.props.css : " ");
 
         return [
-            <Image key="avatarImage" alt={this.props.name} src={this.props.image} css={combinedStyle}/>,
-            <div key="avatarName" className={this.description()}>
+            <Image key="profileImage" alt={this.props.name} src={this.props.image} css={combinedStyle}/>,
+            <div key="profileName" className={this.description()}>
                 {this.props.name.split(' ')[0]} &#x25be;
             </div>
         ];
     }
 
-    size() {
-        if (this.props.small) {
-            return (" avatar-small ");
-        } else if (this.props.medium) {
-            return (" avatar-medium ");
-        } else if (this.props.large) {
-            return (" avatar-large ");
-        } else {
-            return (" "); // Default Button
-        }
-    }
-
     shape() {
         if (this.props.circle) {
-            return (" avatar-circle ");
+            return (" app-bar-menu-profile-image-circle ");
         } else if (this.props.square) {
-            return (" avatar-square ");
+            return (" app-bar-menu-profile-image-square ");
         } else {
             return (" "); // Default Button
         }
@@ -46,16 +34,16 @@ class Avatar extends Component {
 
     description() {
         if (this.props.left) {
-            return (" avatar-left ");
+            return (" app-bar-menu-profile-text-left ");
         } else if (this.props.right) {
-            return (" avatar-right ");
+            return (" app-bar-menu-profile-text-right ");
         } else {
             return (" "); // Default Button
         }
     }
 }
 
-Avatar.propTypes = {
+AppBarMenuProfile.propTypes = {
     id: PropTypes.string,
     css: PropTypes.string,
     name: PropTypes.string,
@@ -65,4 +53,4 @@ Avatar.propTypes = {
     large: PropTypes.bool
 }
 
-export default Avatar;
+export default AppBarMenuProfile;
