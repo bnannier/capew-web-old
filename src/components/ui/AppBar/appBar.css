@@ -17,12 +17,14 @@
     }
 
     .app-bar-menu {
+        width: 100%;
         text-align: right;
-        line-height: 48px;
     }
 
     .app-bar-menu-item {
-        background-color: #00ffff;
+        float: right;
+        height: 48px;
+        vertical-align: middle;
     }
 }
 

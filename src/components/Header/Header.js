@@ -20,7 +20,7 @@ class Header extends Component {
                 <AppBarRight>
                     <AppBarMenu>
                         <AppBarMenuItem>
-                            <Avatar name={this.props.name} image={this.props.userImage} small circle />
+                            <Avatar name={this.props.name} image={this.props.userImage} small circle left />
                         </AppBarMenuItem>
                     </AppBarMenu>
                 </AppBarRight>

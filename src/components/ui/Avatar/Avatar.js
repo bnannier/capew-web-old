@@ -14,9 +14,12 @@ class Avatar extends Component {
     render() {
         let combinedStyle = this.size() + " " + this.shape() + " " + (this.props.css ? this.props.css : " ");
 
-        return (
-            <Image alt={this.props.name} src={this.props.image} css={combinedStyle}/>
-        );
+        return [
+            <Image key="avatarImage" alt={this.props.name} src={this.props.image} css={combinedStyle}/>,
+            <div key="avatarName" className={this.description()}>
+                Hi,<br />{this.props.name}
+            </div>
+        ];
     }
 
     size() {
@@ -40,6 +43,16 @@ class Avatar extends Component {
             return (" "); // Default Button
         }
     }
+
+    description() {
+        if (this.props.left) {
+            return (" avatar-left ");
+        } else if (this.props.right) {
+            return (" avatar-right ");
+        } else {
+            return (" "); // Default Button
+        }
+    }
 }
 
 Avatar.propTypes = {
@@ -47,9 +60,9 @@ Avatar.propTypes = {
     css: PropTypes.string,
     name: PropTypes.string,
     image: PropTypes.string,
-    small: PropTypes.string,
-    medium: PropTypes.string,
-    large: PropTypes.string
+    small: PropTypes.bool,
+    medium: PropTypes.bool,
+    large: PropTypes.bool
 }
 
 export default Avatar;

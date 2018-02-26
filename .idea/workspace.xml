@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82c8a0bb-8fff-4809-b424-88fed7d58fe6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/bnannier.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarLogo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarMenu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarMenuItem.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css" afterPath="$PROJECT_DIR$/src/components/Header/header.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarCenter.js" afterPath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarCenter.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarLeft.js" afterPath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarLeft.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarRight.js" afterPath="$PROJECT_DIR$/src/components/ui/AppBar/AppBarRight.js" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/AppBar/appBar.css" afterPath="$PROJECT_DIR$/src/components/ui/AppBar/appBar.css" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/Avatar/Avatar.js" afterPath="$PROJECT_DIR$/src/components/ui/Avatar/Avatar.js" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/Avatar/avatar.css" afterPath="$PROJECT_DIR$/src/components/ui/Avatar/avatar.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Image/Image.js" afterPath="$PROJECT_DIR$/src/components/ui/Image/Image.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/index.js" afterPath="$PROJECT_DIR$/src/components/ui/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,20 +23,8 @@
       <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppBarMenuItem.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/AppBar/AppBarMenuItem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="162">
+              <caret line="22" column="105" lean-forward="false" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -57,8 +35,8 @@
       <file leaf-file-name="Avatar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ui/Avatar/Avatar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="35" />
+            <state relative-caret-position="226">
+              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -69,8 +47,8 @@
       <file leaf-file-name="avatar.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ui/Avatar/avatar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,8 +57,8 @@
       <file leaf-file-name="appBar.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ui/AppBar/appBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+            <state relative-caret-position="309">
+              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -158,12 +136,12 @@
         <option value="$PROJECT_DIR$/src/components/ui/AppBar/AppBarRight.js" />
         <option value="$PROJECT_DIR$/src/components/ui/AppBar/AppBarMenu.js" />
         <option value="$PROJECT_DIR$/src/components/ui/AppBar/AppBarMenuItem.js" />
-        <option value="$PROJECT_DIR$/src/components/ui/AppBar/appBar.css" />
         <option value="$PROJECT_DIR$/src/components/ui/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/components/ui/Button/Button.js" />
-        <option value="$PROJECT_DIR$/src/components/ui/Avatar/Avatar.js" />
         <option value="$PROJECT_DIR$/src/components/ui/Avatar/avatar.css" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/Avatar/Avatar.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/AppBar/appBar.css" />
       </list>
     </option>
   </component>
@@ -231,6 +209,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="capew-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="capew-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="capew-web" type="b2602c69:ProjectViewProjectNode" />
@@ -312,12 +298,12 @@
       <workItem from="1518305306887" duration="2565000" />
       <workItem from="1518388516689" duration="456000" />
       <workItem from="1518393768566" duration="2000" />
-      <workItem from="1519535897140" duration="14899000" />
+      <workItem from="1519535897140" duration="20149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101129000" />
+    <option name="totallyTimeSpent" value="106379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -657,14 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/AppBar/appBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/AppBar/AppBarMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -675,29 +653,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/AppBar/AppBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,10 +681,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/AppBar/AppBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="105" lean-forward="false" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/AppBar/appBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/Avatar/Avatar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="35" />
+        <state relative-caret-position="226">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -733,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/Avatar/avatar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
