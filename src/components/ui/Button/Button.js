@@ -49,6 +49,8 @@ class Button extends Component {
             return (" secondary-button-error ");
         } else if (this.props.info) {
             return (" secondary-button-info ");
+        } else {
+            return (" "); // Default Button
         }
     }
 }

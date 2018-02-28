@@ -13,14 +13,13 @@ class Header extends Component {
         return (
             <AppBar>
                 <AppBarLeft>
-                    <AppBarLogo logo={capewLogo} />
+                    <AppBarLogo logo={capewLogo}/>
                 </AppBarLeft>
                 <AppBarCenter>
                 </AppBarCenter>
                 <AppBarRight>
                     <AppBarMenu>
-                        <AppBarMenuProfile name={this.props.name} image={this.props.userImage} small circle left />
-                        <AppBarMenuItem>
+                        <AppBarMenuItem label={this.props.name}>
                             yo
                         </AppBarMenuItem>
                     </AppBarMenu>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import './appBar.css'
 import Image from "../Image/Image";
+import Button from "../Button/Button";
 
 /**
  * @description
@@ -12,14 +13,20 @@ import Image from "../Image/Image";
  */
 class AppBarMenuProfile extends Component {
     render() {
-        let combinedStyle = "app-bar-menu-profile-image " + this.shape() + " " + (this.props.css ? this.props.css : " ");
+        // let combinedStyle = "app-bar-menu-profile " + this.shape() + this.description() + " " + (this.props.css ? this.props.css : " ");
 
-        return [
-            <Image key="profileImage" alt={this.props.name} src={this.props.image} css={combinedStyle}/>,
-            <div key="profileName" className={this.description()}>
-                {this.props.name.split(' ')[0]} &#x25be;
+        let imageCSS = "app-bar-menu-profile-image " + this.shape() + this.justify();
+
+        return (
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-        ];
+        );
     }
 
     shape() {
@@ -32,11 +39,11 @@ class AppBarMenuProfile extends Component {
         }
     }
 
-    description() {
+    justify() {
         if (this.props.left) {
-            return (" app-bar-menu-profile-text-left ");
+            return (" app-bar-menu-profile-image-left ");
         } else if (this.props.right) {
-            return (" app-bar-menu-profile-text-right ");
+            return (" app-bar-menu-profile-image-right ");
         } else {
             return (" "); // Default Button
         }
@@ -54,3 +61,9 @@ AppBarMenuProfile.propTypes = {
 }
 
 export default AppBarMenuProfile;
+
+
+{/*<Button css="app-bar-menu-profile-button">*/}
+{/*<Image key="profileImage" alt={this.props.name} src={this.props.image} css={imageCSS}/>*/}
+{/*&nbsp; {this.props.name.split(' ')[0]} &#x25be;*/}
+{/*</Button>*/}
